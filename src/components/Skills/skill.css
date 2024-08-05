@@ -15,6 +15,7 @@
     height: auto;
     background-color: #5078f2;
     background-image: linear-gradient(135deg, #ffffff 0%, #efe9f4 25%, #5078f2 74%);
+}
 
 .skills-title h1{
     display: flex;
