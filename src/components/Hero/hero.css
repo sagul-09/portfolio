@@ -7,8 +7,8 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  position: relative; /* Ensures positioning context for absolute elements */
-  overflow: hidden; /* Prevents content from overflowing */
+  position: relative; 
+  overflow: hidden; 
 }
 
 .hero-particles {
@@ -17,20 +17,20 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1; /* Ensures particles stay behind the content */
+  z-index: -1; 
 }
 
 .hero-content {
   font-size: 2rem;
-  text-align: center; /* Centers text in the hero section */
-  position: relative; /* Ensures content is above particles */
+  text-align: center; 
+  position: relative; 
   z-index: 1;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 700px; /* Limits the size of the image */
-  height: auto; /* Maintains aspect ratio */
+  max-width: 700px; 
+  height: auto; 
 }
 
 .hero-title {
