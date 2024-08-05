@@ -1,0 +1,113 @@
+/* skills.css */
+* {
+    box-sizing: border-box; /* Ensure padding and border are included in the width/height */
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 20px; /* Add margin to separate components */
+    justify-content: space-evenly;
+    overflow: hidden; /* Prevent content overflow */
+    height: 100vh;
+}
+
+.skills-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensure container uses full width */
+    
+    padding: 1rem;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Each card's base width and responsiveness */
+.skill {
+    background-color: #fff;
+    border: 0.2rem solid #ddd;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1.5rem; 
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    width: 200px; 
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 180px; /* Set a minimum width to prevent excessive shrinking */
+}
+
+/* Hover effect */
+.skill:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skill-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.skill-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .skills{
+        height: auto;
+        gap: 2rem;
+    }
+    .skills-container {
+        gap: 20px; 
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 900px) {
+    .skills{
+        height: auto;
+        gap: 2rem;
+    }
+    .skills-container {
+        gap: 15px; 
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 600px) {
+    .skills{
+        height: auto;
+        gap: 2rem;
+    }
+    .skills-container {
+        gap: 10px; 
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .skill {
+        flex: 1 1 calc(33.333% - 10px); /* Adjust for space and gaps */
+        max-width: calc(33.333% - 10px); /* Adjust for space and gaps */
+        min-width: 150px; /* Adjust as needed to ensure cards are not too small */
+    }
+}

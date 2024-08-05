@@ -1,0 +1,101 @@
+/* project.css */
+
+.project {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: orange; */
+  }
+  
+  .project-title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px; /* Adjust the width as needed */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    justify-content: space-evenly;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h2.project-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .project-card .project-image {
+    border-radius: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h3.project-tech,
+  .project-card h3.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .project-card .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-card .project-link:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .project{
+      height: auto;
+      gap: 2rem;
+  }
+    .project-card {
+      width: 100%; /* Full width on smaller screens */
+    }
+    .project-container{
+      gap: 10px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  

@@ -1,0 +1,70 @@
+/* src/components/hero.css */
+
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative; /* Ensures positioning context for absolute elements */
+    overflow: hidden; /* Prevents content from overflowing */
+  }
+  
+  .hero-content {
+    font-size: 2rem;
+    text-align: center; /* Centers text in the hero section */
+
+  }
+  
+ 
+  
+  .hero-image img {
+    width: 100%;
+    max-width: 700px; /* Limits the size of the image */
+    height: auto; /* Maintains aspect ratio */
+  }
+  
+  .animate-character {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+      #44107a 29%,
+      #ff1361 67%,
+      #fff800 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column;
+      padding: 20px;
+    }
+    
+    .hero-content {
+      font-size: 1.5rem;
+    }
+    
+    .animate-character {
+      font-size: 1.2rem;
+    }
+  
+
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  

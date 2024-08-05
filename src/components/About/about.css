@@ -1,0 +1,123 @@
+.about {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+    gap: 10rem; /* Space between elements */
+    padding: 2rem; /* Add padding for overall spacing */
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 1.5rem; /* Font size for desktop */
+}
+.email-link {
+    text-decoration: none;
+    color: inherit; /* Optional: to inherit the color from the parent element */
+  }
+
+
+  .download-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .download-resume-button {
+    background-color: #28a745; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1rem; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    text-align: center; /* Center the text */
+  }
+  
+  .download-resume-button a {
+    color: #fff; /* Link text color */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  .download-resume-button:hover {
+    background-color: #218838; /* Background color on hover */
+  }
+  
+  .send-mail-button:hover {
+    background-color: #0056b3; /* Background color on hover */
+  }
+
+.about-container {
+    display: flex;
+    flex-direction: row; /* Row layout for desktop */
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 2rem; /* Add gap between image and info */
+}
+
+/* Responsive adjustments for tablets and smaller screens */
+@media (max-width: 1024px) {
+    .about {
+        gap: 8rem; /* Adjust gap for tablets */
+        padding: 1.5rem; /* Adjust padding for tablets */
+    }
+
+    .about-title {
+        font-size: 1.75rem; /* Adjust font size for tablets */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack items vertically on tablets */
+        gap: 3rem; /* Adjust gap between items for tablets */
+        align-items: center; /* Center items horizontally */
+    }
+}
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+    .about {
+        gap: 2rem; /* Reduce gap for smaller screens */
+        padding: 1rem; /* Add padding for mobile */
+        height: auto;
+    }
+
+    .about-title {
+        font-size: 1.5rem; /* Smaller font size for mobile devices */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items horizontally */
+        gap: 2rem; /* Space between items when stacked */
+    }
+
+    .image img {
+        max-width: 100%; /* Ensure the image fits within the container */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* Optional: Adjustments for very small screens */
+@media (max-width: 480px) {
+    .about {
+        gap: 2rem; /* Further reduce gap for very small screens */
+        padding: 0.5rem; /* Further reduce padding for very small screens */
+    }
+
+    .about-title {
+        font-size: 1.25rem; /* Further reduce font size for very small screens */
+    }
+
+    .about-container {
+        gap: 1.5rem; /* Further reduce space between items */
+    }
+}

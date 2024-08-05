@@ -1,0 +1,25 @@
+/* App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Example for a component */
+.component-class {
+  width: 100%;
+  max-width: 1200px; /* Optional: to limit the maximum width */
+  padding: 20px; /* Add padding to separate components */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  margin-bottom: 20px; /* Add margin to separate components */
+}
+
+/* Add responsive styles */
+@media (max-width: 768px) {
+  .component-class {
+    padding: 10px; /* Adjust padding for smaller screens */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+}
