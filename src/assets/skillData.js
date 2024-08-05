@@ -9,6 +9,7 @@ import python from './python.png'
 import figma from './figma.png'
 import js from './js.png'
 import linux from './linux.png'
+import post from './postman.png'
 const skillsData = [
     {
       title: 'React JS',
@@ -19,41 +20,45 @@ const skillsData = [
       image: express
     },
     {
-      title: 'HTML',
-      image: html
-    },
-    {
       title: 'Node JS',
       image: node
-    },
-    {
-      title: 'CSS',
-      image: css
     },
     {
       title: 'MongoDB',
       image: mongo
     },
     {
-      title: 'Tailwind CSS',
-      image: tailwind
+      title: 'HTML',
+      image: html
     },
     {
-      title: 'Python',
-      image: python
-    },
-    {
-      title: 'Figma',
-      image: figma
+      title: 'CSS',
+      image: css
     },
     {
       title: 'Javascript',
       image: js
     },
     {
+      title: 'Tailwind CSS',
+      image: tailwind
+    },
+    {
+      title: 'Figma',
+      image: figma
+    },
+    {
+      title: 'Python',
+      image: python
+    },
+    {
       title: 'Linux',
       image: linux
     },
+    {
+      title: 'Postman',
+      image: post
+    }
 
  
   ];
