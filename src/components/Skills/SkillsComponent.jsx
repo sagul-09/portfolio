@@ -9,9 +9,9 @@ const SkillsComponent = () => {
   return (
     <div className="skills">
       <div className="skills-title" data-aos="fade-up">
-        <h1><FaComputer />SKILLS</h1>
+        <h1><FaComputer />SKILLS & <span  style={{ color: 'orange' }}>ABILITIES</span></h1>
       </div>
-      <div className="skills-container">
+      <div className="skills-container" data-aos="zoom-in">
       {skillsData.map((skill, index) => (
         <div className="skill" key={index}  data-aos="flip-up">
           <img src={skill.image} alt={skill.title} className="skill-image" />

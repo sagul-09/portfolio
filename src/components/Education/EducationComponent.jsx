@@ -9,7 +9,7 @@ const EducationComponent = () => {
         <div className="education-container-title" data-aos="fade-up">
             <h1> <FaGraduationCap />EDUCATION</h1>
         </div>
-        <div className="education-container">
+        <div className="education-container" data-aos="zoom-in">
         {educationData.map((educate, index) => (
         <div className="education-card" key={index} data-aos="flip-right">
           <h2 className="education-title">{educate.title}</h2>

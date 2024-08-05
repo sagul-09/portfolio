@@ -5,7 +5,10 @@
   gap: 20px; 
   justify-content: center;
   align-items: center;
-  width: 100%; /* Ensure container uses full width */
+  width: 80%; /* Ensure container uses full width */
+  border-radius: 1rem; 
+  background-color: rgba(0, 0, 0, 0.1);
+
   
   padding: 1rem;
   overflow: hidden; /* Add margin to separate components */
@@ -19,7 +22,8 @@
   margin-bottom: 20px; /* Add margin to separate components */
   justify-content: space-evenly;
   overflow: hidden; /* Prevent content overflow */
-  height: 100vh;
+  height: auto;
+  background-color: #ffffff;
 }
 
 .education-card {
@@ -35,7 +39,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 200px;
+  width: 150px;
   margin-bottom: 20px; /* Add margin to separate cards */
 }
 
@@ -47,7 +51,6 @@
 .education-container-title{
   width: 100%;
   height: auto;
-  padding: 2rem;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
@@ -74,14 +77,27 @@
 @media (max-width: 1024px) {
   .education{
     height: auto;
+ 
   }
   .education-card {
-    flex: 1 1 calc(50% - 20px); /* 2 cards per row on medium screens */
+    flex: 1 1 calc(50% - 20px);
+    width: 150px; /* 2 cards per row on medium screens */
+  }
+  .education-container-title{
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .education-container{
+    height: auto;
+    width: 100%;
+  }
   .education-card {
     flex: 1 1 100%; /* 1 card per row on small screens */
+    width: 150px;
+  }
+  .education-container-title{
+    font-size: 1rem;
   }
 }

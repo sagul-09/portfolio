@@ -1,16 +1,18 @@
 /* project.css */
 
 .project {
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
-    /* background-color: orange; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 20px; /* Add margin to separate components */
+  justify-content: space-evenly;
+  overflow: hidden; /* Prevent content overflow */
+  height: auto;
+  background-color: #5078f2;
+background-image: linear-gradient(315deg, #5078f2 0%, #efe9f4 74%);
+
   }
   
   .project-title {
@@ -29,9 +31,13 @@
   .project-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    width: 100%;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 80%;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
   }
   
   .project-card {
@@ -102,6 +108,10 @@
       gap: 10px;
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+    }
+    .project-title{
+      font-size: 1rem;
     }
   }
   

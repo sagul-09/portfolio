@@ -9,7 +9,7 @@ const ProjectComponent = () => {
       <div className="project-title" data-aos="fade-up">
         <h1> <PiProjectorScreenDuotone />PROJECTS</h1>
       </div>
-      <div className="project-container">
+      <div className="project-container" data-aos="zoom-in">
         {projectData.map((project, index) => (
           <div className="project-card" key={index} data-aos="fade-down">
             <h2 className="project-title">{project.title}</h2>

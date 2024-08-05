@@ -1,13 +1,14 @@
 .certification {
-    padding: 2rem;
-    background-color: #ffffff; /* Adjust background color as needed */
-    height: 100vh;
-    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-evenly;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 20px; /* Add margin to separate components */
+  justify-content: space-evenly;
+  overflow: hidden; /* Prevent content overflow */
+  height: auto;
+  background-color: #ffffff;
 }
 
 .certification-title {
@@ -30,8 +31,12 @@
     flex-wrap: wrap;
     gap: 3rem;
     justify-content: center;
-    width: 100%; 
+    justify-content: space-evenly;
+    width: 80%; 
     align-items: center;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .certificate {
@@ -80,10 +85,22 @@
       height: auto;
       gap: 2rem;
     }
+    .certification-title{
+        font-size: 1rem;
+    }
+    .certification-container{
+        width: 100%;
+    }
   }
   
   @media (max-width: 768px) {
     .certification{
       height: auto;
+    }
+    .certification-container{
+        width: 100%;
+    }
+    .certification-title{
+        font-size: 1rem;
     }
   }
