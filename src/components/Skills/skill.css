@@ -15,9 +15,16 @@
     height: 100vh;
 }
 
+.skills-title h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem;
+}
 .skills-title {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
+    align-items: center;
     width: 100%;
     font-size: 1.5rem;
     margin-bottom: 20px;

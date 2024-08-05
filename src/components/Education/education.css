@@ -58,6 +58,12 @@
   margin-bottom: 10px;
 }
 
+.education-container-title h1{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 1rem;
+}
 .education-card p.education-description {
   font-size: 1rem;
   color: #666;

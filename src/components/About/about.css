@@ -17,6 +17,13 @@
     width: 100%;
     font-size: 1.5rem; /* Font size for desktop */
 }
+
+.about-title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Space between icon and text */
+}
 .email-link {
     text-decoration: none;
     color: inherit; /* Optional: to inherit the color from the parent element */

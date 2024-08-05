@@ -1,12 +1,13 @@
 import React from 'react';
 import './about.css';
 import { assets } from '../../assets/assets';
+import { FaUser } from "react-icons/fa6";
 
 const AboutComponent = () => {
   return (
     <div className='about'>
       <div className="about-title" data-aos="fade-up">
-        <h1>ABOUT ME</h1>
+        <h1> <FaUser />ABOUT ME</h1>
       </div>
       <div className="about-container">
         <div className="image" data-aos="zoom-out-left">

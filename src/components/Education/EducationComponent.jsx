@@ -1,12 +1,13 @@
 import React from 'react'
 import './education.css'
 import educationData from '../../assets/educationData'
+import { FaGraduationCap } from "react-icons/fa6";
 
 const EducationComponent = () => {
   return (
     <div className="education">
         <div className="education-container-title" data-aos="fade-up">
-            <h1>EDUCATION</h1>
+            <h1> <FaGraduationCap />EDUCATION</h1>
         </div>
         <div className="education-container">
         {educationData.map((educate, index) => (

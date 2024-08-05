@@ -2,12 +2,14 @@
 import React from 'react';
 import './skill.css'; // Ensure this path is correct
 import skillsData from '../../assets/skillData'; // Adjust path if necessary
+import { FaComputer } from "react-icons/fa6";
+
 
 const SkillsComponent = () => {
   return (
     <div className="skills">
       <div className="skills-title" data-aos="fade-up">
-        <h1>SKILLS</h1>
+        <h1><FaComputer />SKILLS</h1>
       </div>
       <div className="skills-container">
       {skillsData.map((skill, index) => (

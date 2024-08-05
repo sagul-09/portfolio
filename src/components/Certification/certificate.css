@@ -16,6 +16,12 @@
     width: 100%;
     font-size: 1.5rem;
 }
+.certification-title h1{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem;
+}
 
 
 

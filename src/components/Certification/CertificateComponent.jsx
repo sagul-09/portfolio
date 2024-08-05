@@ -1,12 +1,13 @@
 import React from 'react';
 import './certificate.css';
 import certificateData from '../../assets/certificateData';
+import { PiCertificateBold } from "react-icons/pi";
 
 const CertificateComponent = () => {
     return (
         <div className="certification">
             <div className="certification-title" data-aos="fade-up">
-                <h1>CERTIFICATE</h1>
+                <h1> <PiCertificateBold />CERTIFICATE</h1>
             </div>
             <div className="certification-container">
                 {certificateData.map((certificate, index) => (

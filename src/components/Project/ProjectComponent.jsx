@@ -1,12 +1,13 @@
 import React from 'react';
 import './project.css';
 import projectData from '../../assets/projectData';
+import { PiProjectorScreenDuotone } from "react-icons/pi";
 
 const ProjectComponent = () => {
   return (
     <div className="project">
       <div className="project-title" data-aos="fade-up">
-        <h1>PROJECTS</h1>
+        <h1> <PiProjectorScreenDuotone />PROJECTS</h1>
       </div>
       <div className="project-container">
         {projectData.map((project, index) => (
