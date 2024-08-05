@@ -12,7 +12,7 @@ const ProjectComponent = () => {
         {projectData.map((project, index) => (
           <div className="project-card" key={index} data-aos="fade-down">
             <h2 className="project-title">{project.title}</h2>
-            <hr style={{width:300}}/>
+           <br/>
             <img
               src={project.image}
               alt={project.title}

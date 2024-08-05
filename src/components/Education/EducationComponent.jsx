@@ -12,6 +12,7 @@ const EducationComponent = () => {
         {educationData.map((educate, index) => (
         <div className="education-card" key={index} data-aos="flip-right">
           <h2 className="education-title">{educate.title}</h2>
+          <br/>
           <img src={educate.image} alt={educate.title} width={150} height={150} className="education-image" />
             <h3 className="education-program">{educate.program}</h3>
             <h3 className="education-duration">{educate.duration}</h3>

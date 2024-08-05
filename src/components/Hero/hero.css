@@ -9,11 +9,13 @@
     align-items: center;
     position: relative; /* Ensures positioning context for absolute elements */
     overflow: hidden; /* Prevents content from overflowing */
+
   }
   
   .hero-content {
     font-size: 2rem;
     text-align: center; /* Centers text in the hero section */
+
 
   }
   
