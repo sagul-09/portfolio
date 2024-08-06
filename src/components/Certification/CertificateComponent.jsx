@@ -9,9 +9,9 @@ const CertificateComponent = () => {
             <div className="certification-title" data-aos="fade-up">
                 <h1> <PiCertificateBold />CERTIFICATE</h1>
             </div>
-            <div className="certification-container" data-aos="zoom-in">
+            <div className="certification-container" data-aos="zoom-in ">
                 {certificateData.map((certificate, index) => (
-                    <div className="certificate" key={index} data-aos="flip-left">
+                    <div className="certificate" key={index} data-aos="flip-left" data-aos-duration="800">
                         <img
                             src={certificate.image}
                             alt={certificate.title}

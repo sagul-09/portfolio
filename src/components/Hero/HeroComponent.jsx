@@ -17,10 +17,10 @@ const HeroComponent = () => {
         </h1>
         </div>
         
-        <h1><span className="animate-character" data-aos="fade-right">Full Stack Web Developer</span>
+        <h1><span className="animate-character" data-aos="fade-right" data-aos-duration="800">Full Stack Web Developer</span>
         </h1>
       </div>
-      <div className="hero-image" data-aos="fade-left">
+      <div className="hero-image" data-aos="fade-left" data-aos-duration="800">
         <img src={assets.pf} alt="pfp" />
       </div>
     </div>

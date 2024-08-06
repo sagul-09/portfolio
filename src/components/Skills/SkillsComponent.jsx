@@ -13,7 +13,7 @@ const SkillsComponent = () => {
       </div>
       <div className="skills-container" data-aos="zoom-in">
       {skillsData.map((skill, index) => (
-        <div className="skill" key={index}  data-aos="flip-up">
+        <div className="skill" key={index}  data-aos="flip-up" data-aos-duration="800">
           <img src={skill.image} alt={skill.title} className="skill-image" />
           <h3 className="skill-title">{skill.title}</h3>
         </div>

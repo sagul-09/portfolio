@@ -11,7 +11,7 @@ const ProjectComponent = () => {
       </div>
       <div className="project-container" data-aos="zoom-in">
         {projectData.map((project, index) => (
-          <div className="project-card" key={index} data-aos="fade-down">
+          <div className="project-card" key={index} data-aos="fade-down" data-aos-duration="800">
             <h2 className="project-title">{project.title}</h2>
            <br/>
             <img

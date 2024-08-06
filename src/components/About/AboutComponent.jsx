@@ -10,10 +10,10 @@ const AboutComponent = () => {
         <h1> <FaUser />ABOUT ME</h1>
       </div>
       <div className="about-container">
-        <div className="image" data-aos="zoom-out-left">
+        <div className="image" data-aos="zoom-out-left" data-aos-duration="800">
           <img src={assets.pfbw} alt="" width={400} height={400} style={{ borderRadius: '1rem' }} />
         </div>
-        <div className="info" data-aos="zoom-out-right">
+        <div className="info" data-aos="zoom-out-right" data-aos-duration="800">
           <h1>I'm Sagul</h1>
           <h4>Full Stack Developer</h4>
           <br />

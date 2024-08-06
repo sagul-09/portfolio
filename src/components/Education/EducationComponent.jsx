@@ -11,7 +11,7 @@ const EducationComponent = () => {
         </div>
         <div className="education-container" data-aos="zoom-in">
         {educationData.map((educate, index) => (
-        <div className="education-card" key={index} data-aos="flip-right">
+        <div className="education-card" key={index} data-aos="flip-right" data-aos-duration="800">
           <h2 className="education-title">{educate.title}</h2>
           <br/>
           <img src={educate.image} alt={educate.title} width={150} height={150} className="education-image" />
