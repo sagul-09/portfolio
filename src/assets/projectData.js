@@ -1,6 +1,8 @@
 import chatbot from '../assets/chatbot.png';
 import spotify from '../assets/spotify.png';
 import blog from '../assets/blog.png';
+import movie from '../assets/movie.png';
+import ts from '../assets/ts.png';
 
 const projectData = [
     {
@@ -30,6 +32,20 @@ const projectData = [
         description: "Built a backend for a full-stack blog platform with authentication and CRUD operations using Express.js, Node.js, and MongoDB.",
         image: blog,
         link: "https://github.com/sagul-09/FullStack-Blog-FE",
+    },
+    {
+        title: "Movie Application BE",
+        tech: "Node JS, MongoDB, Express JS",
+        description: "Built a backend CRUD app with Express.js, Node.js, and MongoDB for movie data management.",
+        image: movie,
+        link: "https://github.com/sagul-09/presidio-Task-BE",
+    },
+    {
+        title: "Tech Society FE",
+        tech: "React JS, HTML, CSS, Tailwind CSS",
+        description: "As Joint Secretary of the web development community, I built a frontend web page to boost communication and engagement within the college.",
+        image: ts,
+        link: "https://github.com/sagul-09/modern_app",
     },
     
 ];
