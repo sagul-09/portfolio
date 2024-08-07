@@ -24,3 +24,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 10px;
  
 }
+
+body, html {
+  overflow: visible;
+}

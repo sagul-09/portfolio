@@ -20,12 +20,24 @@ const App = () => {
   return (
     <div className="body">
       <Nav />
-      <Hero />
-      <About />
-      <Skills />
-      <Education />
-      <Project />
-      <Certification />
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="education">
+        <Education />
+      </div>
+      <div id="projects">
+        <Project />
+      </div>
+      <div id="certifications">
+        <Certification />
+      </div >
       <Footer />
     </div>
   );
